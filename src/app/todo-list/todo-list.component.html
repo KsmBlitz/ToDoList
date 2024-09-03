@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+      <input type="text" #todoText placeholder="Añadir Tarea">
+      <button (click)="addTask(todoText.value)">+</button>
+    </div>
+  
+    <ul>
+      <li *ngFor="let todoItem of todoList">
+        <div>
+          <input
+            type="checkbox"
+            [(ngModel)]="todoItem.completed"
+            (change)="toggleCompleted(todoItem.id)"
+          />
+          <span [class.completed]="todoItem.completed">{{ todoItem.task }}</span>
+        </div>
+        <button class="delete" (click)="deleteTask(todoItem.id)">Borrar</button>
+      </li>
+    </ul>
+  </div>
+  

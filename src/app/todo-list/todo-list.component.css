@@ -1,0 +1,82 @@
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el campo de entrada */
+  input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el botón de agregar */
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Esto separa el botón hacia abajo */
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilo para la lista de tareas */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los elementos de la lista */
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el checkbox */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Estilo para la descripción de la tarea */
+  span {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  /* Estilo para las tareas completadas */
+  span.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  /* Estilo para el botón de eliminar */
+  button.delete {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
